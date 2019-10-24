@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Time traveller</title>
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      <link rel="stylesheet" type="text/css" href="game_tt_style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="game_tt_forms.js"></script>
+      <script type="text/javascript" src="xmlManager.js"></script>
+  </head>
+  <body>
+  	<main>
+  	   <div class="name_of_game">Time travellers</div>
+       <div class="select-players">
+	      
+	      <label class="choose_players"> Choose the amount of players:</label>
+	      <select>
+	        <option>2</option>
+	        <option>3</option>
+	        <option>4</option>
+	        <option>5</option>
+	      </select><br>
+	      <button class="start-btn">Begin the journey!</button>
+	    </div>
+	      
+	    <div class="playerTable"></div>
+	    <div class="pathField"></div>
+	    <div class="dice_container"></div>
+	    <div class="task_board">
+	    	<p class="task_title">Task with <strong class="points"> </strong> points</p>
+	    	<label class="task"></label><br><br>
+	    	<input type="radio" name="answer"  value="0"> 
+	    	<label id="answer0"></label> <br>
+	    	<input type="radio" name="answer" value="1"> 
+	    	<label id="answer1"></label> <br>
+	    	<input type="radio" name="answer"  value="2"> 
+	    	<label id="answer2"></label> <br> <br>
+	    	<br>
+	    	<button class="check">Check</button>
+	    	<button class="refuse">Refuse</button>
+	    
+	    </div>
+	    <div class="finish_board"></div>	
+  	</main>
+
+
+    <script>
+    	var ammountPlayers=2;
+			makeMap(".pathField"); //make empty rounds - a map //закомментить!!!
+    	$(".start-btn").click(function(){ //build the game
+          ammountPlayers=Number($("select option:selected").text());
+          $(".select-players").fadeOut("slow");
+          $(".start").outerWidth(ammountPlayers*45);
+          
+          for(var i=0;i<ammountPlayers;i++){
+          	makePlayer(i,".playerTable");
+          	makeRound(i,".pathField", ammountPlayers);
+          	positions[i]=0;
+          }
+          makeDice(".dice_container");
+          $(".dice").hide();
+          //раскомментить
+          // makeMap(".pathField"); //make empty rounds - a map
+      	});
+
+    	var score=0;
+    	$(".playerTable").on("click", ".player_account", function(){//dice
+	        if (!station) return;
+	        var playerNumber=$(this).attr("id");
+	        
+	        $(".dice").hide();
+	        var dice_number=Math.floor(Math.random()*6)+1;
+	        score=dice_number*10;
+	        var chosen=" .dice"+dice_number;
+	        $(chosen).show();
+	          //go
+	        var newPos=positions[playerNumber]+dice_number;
+	        if (newPos<coords.length-1 && finishFlag==false) {//move
+	          $("#round"+playerNumber).css({"left": coords[newPos][0]+1+"px", "top":coords[newPos][1]+1+"px"});
+	          positions[playerNumber]=newPos;
+	        
+	          $(".points").html(score);
+	          $(".task_board").css("opacity","1");
+	          station=false;
+
+	          getTask(dice_number);
+	          abberateRounds();
+        	}
+	        else if(finishFlag==false){//finish and winner
+	          newPos=coords.length-1;
+	          finishFlag=true;
+	          $("#round"+playerNumber).css({"left": coords[newPos][0]+52+"px", "top":coords[newPos][1]+90+"px"});
+	          positions[playerNumber]=coords.length-1;
+
+	          var scores=[];
+	          var maxscore=0;
+	          for (var i=0;i<positions.length;i++){
+	          	scores[i]=Number($("#"+i+" .score").html());
+	          	if (scores[i]>maxscore) maxscore=scores[i];
+	          }
+	          if (maxscore>0){
+	          	var winners=[];
+		        for(var j=0;j<scores.length;j++){
+		          	if(scores[j]==maxscore)	winners.push(j); 
+	          	}
+	          	if (winners.length>1) {
+	          		var max_position=positions[winners[0]];
+	          		for (var n=0;n<winners.length;n++){
+	          			if (positions[winners[n]]>max_position) max_position=positions[winners[n]];
+	          		}
+	          		var listWinners=[];
+	          		for (var m=0;m<winners.length;m++){
+	          			if (positions[winners[m]]==max_position) listWinners.push(winners[m]);
+	          		}
+	          		winners=listWinners;
+	          	}
+				if (winners.length==1) {
+					$(".finish_board").html("<p>The time travel is finished! </p><br>The winner is:<br><br><em>"+ names[winners[0]]+"</em><div></div>");
+				} else {
+					var listWinners;
+					for (var s=0;s<winners.length;s++){
+						listWinners+=names[winners[s]]+"<br>";
+					}
+					$(".finish_board").html("<p>The time travel is finished! </p><br>The winners are:<br><br><em>"+ listWinners+"</em><div></div>");
+
+				}
+	          } else {
+	          	$(".finish_board").html("<p>The time travel is finished! </p><br>There are no winners...<br>Please, play better!<div></div>");
+	          }
+	          
+	          $(".finish_board div").addClass("reload_btn");
+	          $(".finish_board div").attr("title","Начать игру заново");
+	       
+	          $(".finish_board").css("opacity","1");
+	        }
+        });
+
+    	var rightAnswer;
+        $(".check").click(function(){
+        	var playerNumber=$(".activePlayer").attr("id");
+		//check the answer
+			if ($("input:checked").attr("value")==rightAnswer){		
+				//add points to score 
+	        	var points=$(".activePlayer .score").text();
+	        	$(".activePlayer .score").html(Number(points)+score);
+			}
+			moveActivePlayer(playerNumber);
+			station=true;
+		
+
+        });
+         $(".refuse").click(function(){
+         	var playerNumber=$(".activePlayer").attr("id");
+        	moveActivePlayer(playerNumber);
+        	station=true;
+        	
+        });
+
+    	
+    </script>
+  </body>
+<html>

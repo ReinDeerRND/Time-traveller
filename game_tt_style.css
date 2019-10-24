@@ -1,0 +1,292 @@
+html{
+	margin:0;
+	padding: 0;
+	height: 
+	/*1920 x 937 px*/
+}
+body{
+	background-color: black;
+	background-image: url("pics/nebo.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	color:#06121e;
+	/*height:100%;
+	width:100%;*/
+}
+main{
+	margin:0 auto;
+	width:1200px;
+	height:631px;
+/*	border:1px solid white;*/
+	position: relative;
+}
+.name_of_game{
+	font-family:  VoiceFont;
+	font-size: 55px;
+	color:#26dcfc;
+	margin-left:100px;
+}
+.select-players{
+	position:absolute;
+	border:1px solid #128ee5;
+	width:500px;
+	height: 100px;
+	border-radius: 20px;
+	top:80px;
+	left:130px;
+	padding-top:20px;
+	text-align: center;
+	z-index:5;
+	background-color: rgb(70, 90, 176,0.5);
+
+}
+label.choose_players{
+	font-size:25px;
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	color:#26dcfc;
+}
+select{
+	padding:5px;
+	border-radius: 15%;
+	background-color: #0f1636;
+	font-family:  Arial;
+	font-size: 15px;
+	position: relative;
+	top:-3px;
+	color:#26dcfc;
+}
+.start-btn{
+	padding:5px;
+	border-radius: 7px;
+	background-color: #0f1636;
+	font-family:  Arial;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
+	color:#26dcfc;
+	margin-top: 20px;
+}
+.playerTable{
+	margin-top:20px;
+	display:flex; 
+	min-height: 80px;
+	flex-direction: row; 
+	justify-content: flex-start;
+	
+}
+.player_account{
+	width: 100px;
+	height: 100px;
+	border:2px solid #128ee5;
+	border-radius: 0 0 20px;
+	margin-right:20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.player_account:hover{
+	border:2px solid transparent;
+}
+
+.score{
+	position: absolute;
+	top:120px;
+	font-family:  VoiceFont;
+	font-size: 15px;
+	/*color:#26dcfc;*/
+	color:white;
+}
+.circle{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	border:2px solid #128ee5;
+	position:absolute;
+	text-align: center;
+	vertical-align: middle;
+	font-family: VoiceFont;
+	font-size:15px;
+	background-color: rgb(70, 90, 176,0.5);
+	z-index: 1;
+	color:white;
+}
+.start{
+	min-width:135px;
+	height: 45px;
+	border-radius: 7px;
+	border:2px solid #128ee5;
+	position:absolute;
+	text-align: center;
+	vertical-align: middle;
+	font-family: VoiceFont;
+	font-size:30px;
+	color:white;
+	background-color: rgb(70, 90, 176,0.5);
+}
+.finish{
+	height: 140px;
+	width:140px;
+	border-radius: 50%;
+	border:2px solid #128ee5;
+	position:absolute;
+	text-align: center;
+	font-family: VoiceFont;
+	font-size:30px;
+	color:white;
+	background-color: rgb(70, 90, 176,0.5);
+}
+.round{
+	position: absolute;
+	width:0px;
+	height:0px;
+	border-radius: 50%;
+	border:20px solid black;
+	z-index:3;
+}
+.task_board{
+	position: absolute;
+	border-radius: 20px;
+	top:150px;
+	right:450px;
+	border:2px solid #0f1636;
+	box-shadow: 0 0 0 3px #128ee5;
+	width:470px;
+	min-height: 250px;
+	background-color: rgb(70, 90, 176,0.9);
+	font-size:20px;
+	font-family: Arial;
+	font-weight: bold;
+	color:#9ef0ff;
+	padding: 15px;
+	opacity:0;
+	z-index:3;
+
+}
+.task_title{
+	text-align: center;
+	padding:0;
+	margin:0 0 10px;
+	font-size:25px;
+}
+.points{
+	text-shadow: 0px 0px 1px white;
+	color:#f29b9b;
+}
+label.task{
+	min-height: 100px;
+}
+input[type="radio"]+label:hover{
+	color:#24deff;
+}
+.check, 
+.refuse{
+	padding:10px;
+	border-radius: 7px;
+	background-color: #0f1636;
+	font-family:  Arial;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
+	color:#26dcfc;
+	/*margin-top: 20px;*/
+}
+.activePlayer{
+	box-shadow: 0 0 2px 3px white;
+}
+.finish_board{
+	position: absolute;
+	width:600px;
+	height:250px;
+	top:33%;
+	left:34%;
+	z-index:5;
+	padding-top:40px;
+	padding-left: 50px;
+	font-family:  VoiceFont;
+	font-size: 20px;
+	/*color:#FF4500;*/
+	opacity:0;
+	border-radius: 20px;
+	border:2px solid #0f1636;
+	box-shadow: 0 0 0 3px #128ee5;
+	background-color:  rgb(70, 90, 176,0.9);
+}
+.finish_board p{
+	font-size: 30px;
+	padding:0;
+	margin: 0;
+	color:black;
+}
+em{
+	color:white;
+	text-shadow:1px 1px 0 black;
+	font-size:25px;
+}
+.reload_btn{
+	width:40px;
+	min-height: 45px;
+	background-image: url('pics/restart.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 30px;
+	right: 50px;
+	
+}
+.dice_container{
+	position: absolute;
+	top:195px;
+	right:367px;
+}
+.dice{
+	border:1px solid black;
+	width:40px;
+	height:40px;
+	border-radius: 5px;
+	padding: 0;
+	margin:0;
+	display: flex;
+	opacity: 1;
+	background-color: white;
+	color:black;
+}
+.dice1{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.dice2, .dice3{
+		justify-content: space-around;
+}
+.dice_bottom{
+	align-self: flex-end;
+}
+.dice_top{
+	align-self: flex-start;
+}
+.dice_center{
+	align-self: center;
+}
+.dice4, .dice6{
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.dice5{
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.dice-col{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+   @font-face {
+    font-family: VoiceFont; /* Гарнитура шрифта */
+    src: url(fonts/VoiceFont.otf); /* Путь к файлу со шрифтом */
+   }

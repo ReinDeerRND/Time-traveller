@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+	<task>
+		<description>Stop ______ !</description>
+		<choice>talking</choice>
+		<choice>to talk</choice>
+		<choice>talk</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>All I need is __ .</description>
+		<choice>she</choice>
+		<choice>her</choice>
+		<choice>herself</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>_______ to go out to an Japan restaurant tonight?</description>
+		<choice>Are you liking</choice>
+		<choice>Would you like</choice>
+		<choice>Do you like</choice>
+		<answer>1</answer>
+	</task>
+			<task>
+		<description>How many parts does The United Kingdom consist of?</description>
+		<choice>it has no parts</choice>
+		<choice>5</choice>
+		<choice>4</choice>
+		<answer>2</answer>
+	</task>
+		<task>
+		<description>The doctor told me that I ___ smoke.</description>
+		<choice>mustn&apos;t</choice>
+		<choice>won&apos;t</choice>
+		<choice>doesn&apos;t have</choice>
+		<answer>0</answer>
+	</task>
+		<task>
+		<description>___ your homework yet?</description>
+		<choice>Do you finish</choice>
+		<choice>Have you finished</choice>
+		<choice>Are you finishing</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description> ___ you help me with my project, please?</description>
+		<choice>Will</choice>
+		<choice>Do</choice>
+		<choice>Are</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>When _____ you last ______ tennis?</description>
+		<choice>did play</choice>
+		<choice>do  play</choice>
+		<choice>did played</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>______ you like _______ coffee? </description>
+		<choice>Do ... any</choice>
+		<choice>Are ... some</choice>
+		<choice>Would ... some</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>There isn&apos;t ___ milk in the fridge.</description>
+		<choice>many</choice>
+		<choice>much</choice>
+		<choice>a</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>Have you got ______ brothers? </description>
+		<choice>some</choice>
+		<choice>any</choice>
+		<choice>the</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>Look, it&apos;s very cloudy. It __________ .</description>
+		<choice>&apos;s going to rain</choice>
+		<choice>rainy</choice>
+		<choice>raining</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>I&apos;m going to Egypt _________ the pyramids.</description>
+		<choice>seeing</choice>
+		<choice>to see</choice>
+		<choice>going to see</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>______ you ever _____ Chinese food? </description>
+		<choice>Have ... eat</choice>
+		<choice>Have ... ate</choice>
+		<choice>Have ... eaten</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>________ &apos;s the weather like in Mexico City?</description>
+		<choice>How</choice>
+		<choice>What</choice>
+		<choice>Which</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>It&apos;s snowy — please drive _____</description>
+		<choice>carefully</choice>
+		<choice>easily</choice>
+		<choice>careful</choice>
+		<answer>0</answer>
+	</task>
+</tasks>

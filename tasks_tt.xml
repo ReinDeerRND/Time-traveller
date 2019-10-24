@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+	<task>
+		<description>London is ___ capital of Great Britain.</description>
+		<choice>a</choice>
+		<choice>__</choice>
+		<choice>the</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Choose the capital of Australia</description>
+		<choice>Canberra</choice>
+		<choice>Sydney</choice>
+		<choice>Ottawa</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>__ there a zoo near here?</description>
+		<choice>Is</choice>
+		<choice>Are </choice>
+		<choice>If</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Parents asked me to look ___ my little brother.</description>
+		<choice>after</choice>
+		<choice>for</choice>
+		<choice>to</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>My favorite sport __ football.</description>
+		<choice>are</choice>
+		<choice>is</choice>
+		<choice>be</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>Roberto is American. He&apos;s __ the USA</description>
+		<choice>from</choice>
+		<choice>to</choice>
+		<choice>at</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>___ you help me, please?</description>
+		<choice>Have</choice>
+		<choice>Do</choice>
+		<choice>Can</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Moscow is the ____ of Russia.</description>
+		<choice>country</choice>
+		<choice>nationality</choice>
+		<choice>capital</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>___ that man in the black hat?</description>
+		<choice>Whose</choice>
+		<choice>Who</choice>
+		<choice>Who&apos;s</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Is ___ your new bike? It&apos;s great!</description>
+		<choice>these</choice>
+		<choice>that</choice>
+		<choice>there</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>This letter is for Tom. Give it to __.</description>
+		<choice>him</choice>
+		<choice>he</choice>
+		<choice>his</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>We __ to school every day</description>
+		<choice>gos</choice>
+		<choice>goes</choice>
+		<choice>go</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Samanta often __ fish because it&apos;s good for her.</description>
+		<choice>eats</choice>
+		<choice>eat</choice>
+		<choice>eates</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Laura ___ a letter at the moment.</description>
+		<choice>write</choice>
+		<choice>is writing</choice>
+		<choice>writes</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>What ______ on Saturdays?</description>
+		<choice>are you doing</choice>
+		<choice>do you</choice>
+		<choice>do you do</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Look at Jane! She ___ a cute dress today!</description>
+		<choice>wearing</choice>
+		<choice>is wearing</choice>
+		<choice>wears</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>Yesterday we __ to the cinema and saw an interesting movie.</description>
+		<choice>go</choice>
+		<choice>have gone</choice>
+		<choice>went</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>When __ Rome? Last summer or last winter?</description>
+		<choice>did you visit</choice>
+		<choice>are you visiting</choice>
+		<choice>do you visit</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>London is __ than New York.</description>
+		<choice>noisiest</choice>
+		<choice>more noise</choice>
+		<choice>noisier</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Paris is the ___ city I&apos;ve ever seen.</description>
+		<choice>beautiful</choice>
+		<choice>beautifulest</choice>
+		<choice>the most beautiful</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Anna and Kate _______ to the cinema last Sunday.</description>
+		<choice>didn&apos;t went</choice>
+		<choice>don&apos;t go</choice>
+		<choice>didn&apos;t go</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>I had breakfast _______ ago.</description>
+		<choice>this morning</choice>
+		<choice>three hours</choice>
+		<choice>7.30 a.m.</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>When _____ you last ______ tennis?</description>
+		<choice>did ... play</choice>
+		<choice>do ... play</choice>
+		<choice>did ... played</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>The buildings in Venice are ________ the buildings in New York.</description>
+		<choice>older than</choice>
+		<choice>more older than</choice>
+		<choice>much old than</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Vienna is __________ city in Austria.</description>
+		<choice>the most beautiful</choice>
+		<choice>the beautiful less</choice>
+		<choice>more beautiful than</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>This restaurant is very, very good. It&apos;s __________ restaurant in London </description>
+		<choice>the better</choice>
+		<choice>the good</choice>
+		<choice>the best</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>I ________ a jumper and a jacket because it&apos;s cold today.</description>
+		<choice>wear</choice>
+		<choice>&apos;s wearing</choice>
+		<choice>&apos;m wearing</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>_______ Jim _____ today?</description>
+		<choice>Does ... work</choice>
+		<choice>Is ... working</choice>
+		<choice>Does ... works</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description> Sam: _______ did you buy your jacket? Colin: At a shop in town.</description>
+		<choice>When</choice>
+		<choice>Why</choice>
+		<choice>Where</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Sam:How much did you pay for your book? Colin: ____________</description>
+		<choice>£8.50</choice>
+		<choice>Hewitt&apos;s Bookshop</choice>
+		<choice>To read some Shakespeare</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Olivia __________ to Tokio.</description>
+		<choice>has never been</choice>
+		<choice>has ever been</choice>
+		<choice>hasn&apos;t never been</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>It was a beautiful morning. The sun _____ and it was very warm.</description>
+		<choice>shines</choice>
+		<choice>was shining</choice>
+		<choice>shone</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>Adam:What _______ for a living? Sam:She&apos;s a teacher.</description>
+		<choice>does she do</choice>
+		<choice>is she doing</choice>
+		<choice>does she</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>This is the ____ ring I&apos;ve ever seen. How much did it cost you?</description>
+		<choice>more expensive</choice>
+		<choice>less expensive</choice>
+		<choice>most expensive</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>If she _____, I&apos;ll go on my own.</description>
+		<choice>comes</choice>
+		<choice>will come </choice>
+		<choice>didn&apos;t come</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Jonathan and Fred ______ a cup of tea at the moment.</description>
+		<choice>are having</choice>
+		<choice>have</choice>
+		<choice>is having</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>When she ____ back, she&apos;ll call you.</description>
+		<choice>doesn&apos;t come</choice>
+		<choice>comes</choice>
+		<choice>came</choice>
+		<answer></answer>
+	</task>
+	<task>
+		<description>I think I ___ for you here. I just can&apos;t go on walking!</description>
+		<choice>will wait</choice>
+		<choice>am going to wait</choice>
+		<choice>am waiting</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Andrew has been painting ____ 2003.</description>
+		<choice>since</choice>
+		<choice>for</choice>
+		<choice>in</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>How ____ honey do you need?</description>
+		<choice>many</choice>
+		<choice>much</choice>
+		<choice>any</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Rainforests _____ down and the trees are used to make paper.</description>
+		<choice>are cutting</choice>
+		<choice>is cut</choice>
+		<choice>are cut</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>I wanted _____ but I didn&apos;t know what to do</description>
+		<choice>to help</choice>
+		<choice>helping</choice>
+		<choice>help</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>Daniel works long hours, ____?</description>
+		<choice>isn&apos;t he</choice>
+		<choice>doesn&apos;t he</choice>
+		<choice>isn&apos;t it</choice>
+		<answer>1</answer>
+	</task>
+</tasks>

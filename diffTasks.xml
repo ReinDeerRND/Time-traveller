@@ -1,0 +1,86 @@
+<tasks>
+	<task>
+		<description>When _____ Polly _____ with her friend in Madrid?</description>
+		<choice>does ... going to stay</choice>
+		<choice>___ ... is going to stay</choice>
+		<choice>is ... going to stay</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Steve:I&apos;ve met Robbie Williams. Laura:When __________ ?</description>
+		<choice>have you met</choice>
+		<choice>did you met him</choice>
+		<choice>did you meet him</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Raquel and James have _______ had a baby.</description>
+		<choice>yet</choice>
+		<choice>just</choice>
+		<choice>ever</choice>
+		<answer>1</answer>
+	</task>
+	<task>
+		<description>Has Nigel cooked dinner _____ ?</description>
+		<choice>yet</choice>
+		<choice>ever</choice>
+		<choice>just</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>George ____ to work hard but he does now.</description>
+		<choice>didn&apos;t</choice>
+		<choice>used</choice>
+		<choice>didn&apos;t use</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Mum asked me how long ____ for her.</description>
+		<choice>I had been waiting</choice>
+		<choice>had I been waiting</choice>
+		<choice>have I been waiting</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>There must be ____ milk in the fridge.</description>
+		<choice>a few</choice>
+		<choice>few</choice>
+		<choice>some</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>Julie ______ to San Francisco three times.</description>
+		<choice>has gone</choice>
+		<choice>was going</choice>
+		<choice>has been</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>If I____ rich, I&apos;d buy a yacht.</description>
+		<choice>were</choice>
+		<choice>am</choice>
+		<choice>would be</choice>
+		<answer>0</answer>
+	</task>
+	<task>
+		<description>By next week, I _____  the kitchen and the living room.</description>
+		<choice>will paint</choice>
+		<choice>will be painting</choice>
+		<choice>will have painted</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>He swims ____ a fish.</description>
+		<choice>for</choice>
+		<choice>as</choice>
+		<choice>like</choice>
+		<answer>2</answer>
+	</task>
+	<task>
+		<description>My mother started work ________1980.</description>
+		<choice>in</choice>
+		<choice>from</choice>
+		<choice>on</choice>
+		<answer>0</answer>
+	</task>
+</tasks>
